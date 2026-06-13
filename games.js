@@ -244,8 +244,7 @@ function rockPaperScissorsGame() {
 
   while (play) {
     const computerChoice = choices[getRandomNumber(0, choices.length - 1)];
-    console.log(computerChoice);
-
+    
     let userChoice = prompt(`${taskArray[getRandomNumber(0, taskArray.length - 1)]}`);
     if (userChoice === null) {
       play = false;
@@ -271,7 +270,7 @@ function rockPaperScissorsGame() {
   if (!play) alert('Ждем тебя снова!');
 }
 
-// 5 - Генератор случайных цветов
+// 6 - Генератор случайных цветов
 
 function randomColorGeneratorGame() {
   const sectionEl = document.querySelector('.game6');
